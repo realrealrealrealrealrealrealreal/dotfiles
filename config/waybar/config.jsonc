@@ -1,0 +1,60 @@
+// -*- mode: jsonc -*-
+{
+    // "layer": "top", // Waybar at top layer
+    //"position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 40, // Waybar height (to be removed for auto height)
+    "width": 1890, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
+    "margin-top": 20,
+    // Choose the order of the modules
+    "modules-left": [
+        "custom/wofi",
+        "hyprland/workspaces",
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "clock",
+        "custom/notifications",
+        "custom/menu",
+    ],
+    
+"custom/wofi": {
+    "format": "󰣇",
+    "on-click": "wofi --show drun",
+},
+    
+     "hyprland/workspaces": {
+         "disable-scroll": true,
+         "all-outputs": true,
+         "warp-on-scroll": false,
+         "format": "{icon}",
+         "format-icons": {
+             "active": "",
+             "default": ""
+         }
+     },
+    
+
+"clock": {
+        "format": "{:%I:%M %p}"
+},
+
+
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}%",
+        "format-bluetooth": "{volume}%",
+        "format-bluetooth-muted": "",
+        "on-click": "pavucontrol"
+    },
+    "custom/notifications": {
+        "format": "󰂚 ",
+        "on-click": "swaync-client -t -sw"
+    },
+    
+    "custom/menu": {
+        "format": " ",
+        "on-click": "~/.config/wofi/power-menu.sh"
+    },
+
+}

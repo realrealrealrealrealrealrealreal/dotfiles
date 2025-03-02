@@ -1,4 +1,19 @@
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: 'segoeui', sans-serif;
     font-size: 20;
+}
+
+#entry {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.25)0%, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.6)50%);
+    margin-top: 5px;
+}
+
+#input {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.25)0%, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.6)50%);
+}
+
+
+#window {
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust alpha (last value) for transparency */
+    border-radius: 10px; /* Optional: Makes edges smoother */
 }

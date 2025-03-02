@@ -17,7 +17,7 @@
         "custom/notifications",
         "custom/menu",
     ],
-    
+
 "custom/wofi": {
     "format": "󰣇",
     "on-click": "wofi --show drun",

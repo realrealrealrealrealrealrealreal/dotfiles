@@ -1,4 +1,4 @@
-# Hyprland Gruvbox Dotfiles
+# Frutiger Aero + Gruvbox Dotfiles
 
 ## Details
 
@@ -9,4 +9,4 @@
 - **Bar**: Waybar
 - **Launcher**: Wofi
 - **GTK Theme**: [Gruvbox GTK Theme](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme)
-- **Fonts**: Inter
+- **Fonts**: Segoe UI

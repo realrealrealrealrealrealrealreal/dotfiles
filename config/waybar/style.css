@@ -1,5 +1,5 @@
 * {
-    font-family: "Inter", sans-serif;
+    font-family: "segoeui", sans-serif;
 }
 
 window {
@@ -43,4 +43,6 @@ waybar {
 
 window#waybar {
   background: rgba(29, 32, 33, 0.5); /* 80% transparent black */
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.25)0%, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.6)50%);
+  border-radius: 12px;
 }

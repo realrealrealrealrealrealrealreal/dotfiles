@@ -1,5 +1,5 @@
 # List of options
-options="Shutdown\nReboot\nLock\nBluetooth\nScreenshot\nRecord\nText Editor\nDisks"
+options="Shutdown\nReboot\nLogout\nBluetooth\nScreenshot\nRecord\nText Editor\nDisks"
 
 # Display the options using Wofi
 selected=$(echo -e "$options" | wofi --show dmenu --prompt "Power Menu:")
@@ -12,8 +12,8 @@ case $selected in
     Reboot)
         systemctl reboot
         ;;
-    Lock)
-        hyprlock
+    Logout)
+        hyprctl dispatch exit
         ;;
     Bluetooth)
         blueman-manager
